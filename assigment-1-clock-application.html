@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: #505050;
+            color: #993300;
+            margin-top: 150px;
+        }
+
+        img {
+            margin-left: 790px;
+
+        }
+
+        h1 {
+            text-align: center !important;
+            color: rgba(252, 130, 15, 0.95) !important;
+        }
+
+        span {
+            position: relative;
+            text-align: center;
+            color: #e98208;
+            font-size: 60px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            letter-spacing: 7px;
+            margin-left: 120px;
+        }
+
+        p {
+            position: relative;
+            text-align: center;
+            color: #e98208;
+            font-size: 40px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            letter-spacing: 7px;
+            margin-right: 100px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body onload=display_ct()>
+
+    <img src="kodluyoruz_yatay_slogan-300x35.png" alt="" srcset="">
+
+    <h1 id="baslık">
+        Merhaba Hoşgeldin Göt !!
+    </h1>
+
+    <span id='ct'></span>
+
+    <p>
+        tarihinde <strong>Kodluyoruz Frontend Web Development patikasinin javascript bölümü 1.Ödevindesin</strong>
+    </p>
+    <script>
+
+        var isim = window.prompt("ismini gir ");
+
+        var baslık = document.querySelector("#baslık");
+
+        baslık.innerHTML = `Merhaba ${isim} ! Hoşgeldin!`
+        function display_c() {
+            var refresh = 1000; // Refresh rate in milli seconds
+            mytime = setTimeout('display_ct()', refresh)
+        }
+
+        function display_ct() {
+            var x = new Date()
+            document.getElementById('ct').innerHTML = x;
+            display_c();
+        }
+    </script>
+
+</body>
+
+</html>
